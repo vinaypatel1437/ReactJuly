@@ -4,13 +4,16 @@ import { useState } from 'react';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
+// import * as Mains from './Components/Main';
+// import {Main, Main1, Main2} from './Components/Main';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Main/>
+      {/* <Main/> */}
       <Footer/>
+      {/* <Mains.Main></Mains.Main> */}
     </div>
   );
 }
