@@ -8,7 +8,7 @@ export default class Foot1 extends Component {
     return (
         <div>
             <input onChange={this.props.myName} placeholder="Enter name or Confirm Name"></input><br></br>
-            <Foot2 age={this.props.name}></Foot2>
+            {/* <Foot2 age={this.props.name}></Foot2> */}
         </div>
     )
   }
