@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
 import Test from './Components/Test';
+import MyPureComponent from './Components/MyPureComponent';
 // import * as Mains from './Components/Main';
 // import {Main, Main1, Main2} from './Components/Main';
 
@@ -32,6 +33,8 @@ import Test from './Components/Test';
 // }
 
 import React, { Component } from 'react'
+import RefSection from './Components/RefSection';
+import Sample from './Components/Sample';
 
 export default class App extends Component {
   constructor() {
@@ -47,15 +50,18 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div>
-        <button onClick={this.changeStatus}>Change Status</button>
-        {/* {
-          this.state.status ? "" : <Footer/>
-        } */}
-        {
-          this.state.status && <Footer/>
-        }
-      </div>
+      // <div>
+      //   <button onClick={this.changeStatus}>Change Status</button>
+      //   {/* {
+      //     this.state.status ? "" : <Footer/>
+      //   } */}
+      //   {
+      //     this.state.status && <Footer/>
+      //   }
+      // </div>
+      // <Sample/>
+      // <RefSection/>
+      <MyPureComponent/>
     )
   }
 }
