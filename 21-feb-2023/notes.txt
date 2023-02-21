@@ -1,0 +1,12 @@
+Todo List :-
+        DOM tree :- 
+                                index
+                                  |
+                                 App
+                                  |
+                _____________________________________________
+                |           |               |               |
+            Header        MainPage        Modal            Footer
+              +           Todo Show       Create Todo
+
+
