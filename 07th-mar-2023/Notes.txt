@@ -1,0 +1,126 @@
+Todo :- 
+    1. Function Component.
+    2. Hooks.
+    3. State and props in function component.
+    4. Custom Hooks.
+    5. Lifecycle (useEffect)
+
+--> Functional Component.
+    Normal Function Component / Arrow function component.
+    normal function / arrow function.
+
+____________________________________________Class Component Sample Code ________________________________________________________________________________
+import React, {Component} from 'react';
+
+class MyComponent extends Component {
+    constructor() {
+        super();
+        this.state = {
+            myState: '',
+        }
+    }
+    handleClick = () => {
+        this.setState({
+            myState: 'Blue',
+        });
+    }
+    render() {
+        return (
+            <div>
+                Hello world {this.state.myState}  {this.props.myProp}
+                <button onClick={this.handleClick} >Click here </button>
+            </div>
+        )
+    }
+}
+export default MyComponent;
+
+___________________________________________Function Component Sample Code ________________________________________________________________________________
+
+import {useState} from 'react';
+
+function MyComponent () {
+        // state, setter Function :- 
+    let [myState, setMyState] = useState('Hello');
+    let [myState2, setMyState2] = useState('');
+
+    let handleClick = () => {
+        setMyState('blue');
+    }
+
+    return (
+        <div>
+            Hello world {myState}
+            <button onClick={handleClick}>Click</button>
+        </div>
+    )
+}
+
+export default MyComponent;
+
+
+===============================================================================================================
+Functional Component introduces hooks.
+Hook will help us to work with state and lifecycle. 
+react 16.8 -> Hook.
+early Feb 2019.
+
+State :- useState();
+useState is a hook which help us to manage the state.
+The useState hook will return us two things.
+    a. state :- It is the container for a specific component.
+    b. setterFunction :- It is use to set the value of the state.
+
+
+// Code reusable.
+// Easy to use.
+// We can make a custom hook as a common hook.
+const useMyCustomHook = (val) => {
+    React.useEffect(() => {
+      console.log(val);
+    }, [])
+}
+
+________________________________________________________________________________
+
+1. Component lifecycle :-
+    a. mount / birth/ create.
+    b. Update.
+    c. unmount.
+
+    useEffect();
+
+    4 variations of useEffect.
+
+    a. component mount.
+        useEffect(()=>{
+
+        },[]);
+
+    b. component update.
+        useEffect(() => {
+
+        },[myState, name]);
+
+    c. component unmount.
+        useEffect(()=>{
+            return {
+
+            }
+        },[]);
+
+  useEffect(() => {
+    // Component ke mount home par.
+    console.log("Component is mounted");
+     return () => {
+        // Component ke unmount hone par
+        console.log("Component is unmounted");
+    }
+  },[]);
+  useEffect(()=>{
+    console.log("I will run bar bar when component is mounted, component is updated")
+  });
+  
+  useEffect(()=>{
+    console.log('Component is updated and new value of state is ', oneState);
+  }, [oneState]);

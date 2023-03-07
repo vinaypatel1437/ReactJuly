@@ -1,0 +1,35 @@
+-> RoadMap for this week and Next week :- 
+    1. React Functional Component.
+    2. Hooks.
+    3. Custom hooks.
+    4. Functional Component state and props.
+    5. Lifecycle method (useEffect).
+    6. Memo, useCallback and more hooks.
+    7. Mini Project.
+    8. Context API. Why Context API ?
+    9. Context API in class component and functional component.
+    10. Pure Component.
+    11. Controlled Component.
+    12. Uncontrolled Component.
+    13. HOC :- Higher Order Components.
+    14. Lifting the state.
+    15. Project using functional component.
+    16. Redux, What, Why and when to use redux ?
+    17. Store, reducer.
+    18. Thunk in redux.
+    19. Project using react and redux.
+    20. More projects and doubts.
+    Monday (2 days or 1 day) :- Interview Prep session, Difficult questions ko kese tackle.
+            Sheet in which most of the interview questions are written.
+    Optional session after frontend :- 
+        1. Extension development.
+        2. Automation using JS.
+        3. Automation using Python.
+        4. Web Scrapping using JS.
+        5. File Handling with JS.
+        6. React Native.
+        7. React Electron.
+
+    API Google form.
+    Pending:- 
+    -> Resume wala G form.
